@@ -25,8 +25,8 @@ Protected endpoints require a valid JWT token in the request header:
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
+```
 
-```markdown
 ## Backend Technologies
 
 - Java
@@ -74,3 +74,4 @@ src/main/java/com/physcolog
 ├── services
 │
 └── PhyscologApplication
+```
