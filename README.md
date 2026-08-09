@@ -10,6 +10,34 @@ The project follows a layered architecture and demonstrates practical enterprise
 
 ![Application Architecture](docs/screenshots/architecture.png)
 
+## Authentication
+
+The API is secured using **Spring Security and JWT (JSON Web Token)** authentication.
+
+The authentication flow is based on:
+
+1. User authentication
+2. JWT token generation
+3. Token-based request authentication
+4. Role-based authorization
+
+Protected endpoints require a valid JWT token in the request header:
+
+```http
+Authorization: Bearer <JWT_TOKEN>
+
+```markdown
+## Backend Technologies
+
+- Java
+- Spring Boot
+- Spring Security
+- JWT
+- JPA / Hibernate
+- PostgreSQL
+- Maven
+- REST API
+
 ## Features
 
 - RESTful API architecture
