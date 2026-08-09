@@ -1,55 +1,48 @@
 # Physcolog Backend
 
-A RESTful backend application for a psychologist management platform, built with **Java and Spring Boot**.
+A production-oriented backend application developed for a professional psychology platform using **Java and Spring Boot**.
 
-The project provides a structured backend architecture with authentication, authorization, REST APIs, persistence, validation, and PostgreSQL integration.
+The project follows a layered architecture and demonstrates practical enterprise backend development with REST APIs, Spring Security, JWT authentication, JPA/Hibernate, DTOs, repositories, services, validation, and PostgreSQL.
+
+## Project Preview
+
+### Application Architecture
+
+![Application Architecture](docs/screenshots/architecture.png)
 
 ## Features
 
 - RESTful API architecture
 - JWT-based authentication
-- Spring Security integration
-- Role-based security
-- Spring Data JPA
-- PostgreSQL database integration
+- Spring Security
+- Role-based authorization
 - DTO-based API design
-- Bean Validation
-- Service and repository layers
-- Global configuration and security components
-- Actuator support
-- Image processing support
-- Unit and application test structure
-
-## Tech Stack
-
-- **Java 17**
-- **Spring Boot 3.2.5**
-- **Spring Web**
-- **Spring Security**
-- **Spring Data JPA**
-- **PostgreSQL**
-- **JWT**
-- **Bean Validation**
-- **Lombok**
-- **Maven**
-- **Spring Boot Actuator**
-- **Thumbnailator**
+- JPA / Hibernate
+- PostgreSQL
+- Layered architecture
+- Service and repository patterns
+- Entity / DTO separation
+- Request validation
+- Global configuration
+- Exception handling
+- Helper and utility components
+- Maven-based project structure
 
 ## Architecture
 
 The application follows a layered backend architecture:
 
 ```text
-src/main/java/com/physcolog/
+src/main/java/com/physcolog
 │
-├── config/
-├── controllers/
-├── dto/
-├── entities/
-├── enums/
-├── helper/
-├── repository/
-├── security/
-│   └── service/
-├── services/
-└── PhyscologApplication.java
+├── config
+├── controllers
+├── dto
+├── entities
+├── enums
+├── helper
+├── repository
+├── security.service
+├── services
+│
+└── PhyscologApplication
